@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header__header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: aquamarine;
+  justify-content: end;
+}
+
+.gamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.box {
+  height: 4px;
+  background-color: rgb(167, 182, 196);
+  width: 100%;
+}
+.gamberger-image {
+  margin-bottom: 8px;
+  background-image: url("../image/gamburger.svg");
+  background-repeat: no-repeat;
+}
+.gamberger-image:hover {
+  background-image: url("../image/Cross.png");
+  background-repeat: no-repeat;
+}
+.sitenav {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: #816e6e;
+  width: 100%;
+  padding: 20px;
+}
+.sitenav__item {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+}
+.wrapper {
+  display: flex;
+  gap: 300px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.premary-btn {
+  background-color: rgb(202, 223, 241);
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-align: center;
+}
+.secondary-btn {
+  background-color: black;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 15px 25px;
+  text-align: center;
+}
+.gamburger-menu:hover + .sitenav {
+  display: block;
+}
